@@ -1,61 +1,76 @@
-# Bookstore API Test Automation
+# 📚 Bookstore E2E API Automation Framework
 
-## Framework Overview
-A comprehensive test automation framework for validating Bookstore API endpoints using modern testing practices.
+A robust API automation suite for Bookstore application, built using **Java**, **TestNG**, and **Cucumber BDD**, with **Rest Assured** for API interaction and **Maven** for build management.
 
-## Features
-- Complete CRUD operations testing
-- Environment-specific configurations
-- TestNG test management
-- CI/CD integration with GitHub Actions
-- Detailed test reporting
+---
 
-## Prerequisites
+## 💻 Tech Stack Overview
+
+| Component         | Description                                                                 |
+|------------------|-----------------------------------------------------------------------------|
+| 🧠 **IDE**        | IntelliJ IDEA                                                               |
+| ☕ **Language**    | Java 17+                                                                    |
+| 🔄 **Framework**  | Rest Assured + Cucumber BDD – For readable, behavior-driven API automation |
+| 🛠 **Build Tool** | Maven – For dependency management & CI/CD integrations                      |
+| ✅ **Test Execution** | TestNG – For test execution, parallel runs, retries, and CI/CD integration |
+| 📊 **Reporting**  | Maven Surefire Reports – Default test report with HTML/XML outputs          |
+
+---
+
+## 📂 Project Structure
+
+```
+bookstore-automation/
+├── src/
+│   └── test/
+│       ├── java/
+│       │   ├── stepdefinitions/
+│       │   ├── runners/
+│       │   └── utils/
+│       └── resources/
+│           └── features/
+├── pom.xml
+└── README.md
+```
+
+---
+
+## ✅ Features
+
+- **Readable Test Scenarios**: Using Gherkin syntax in `.feature` files.
+- **API Testing with Rest Assured**: Fluent API testing DSL.
+- **Parallel Test Execution**: Enabled via TestNG.
+- **Simple Reporting**: Surefire-generated reports under `target/surefire-reports`.
+- **CI/CD Ready**: Easily integrated into Jenkins or other pipeline tools.
+
+---
+
+## 📡 Sample Endpoints Covered
+
+- `POST /signup/`
+- `POST /login/`
+- `POST /books/`
+- `GET /books/`
+- `GET /books/{id}`
+- `PUT /books/{id}`
+- `DELETE /books/{id}`
+
+---
+
+## ▶️ How to Run
+
+### 🧰 Prerequisites
+
 - Java 17+
-- Maven 3.8+
+- Maven
 
-## Installation
-1. Clone the repository
-2. Install dependencies:
+### 🚀 Run Tests
 
--pip install -r requirements.txt
+```bash
+mvn clean test
+```
 
-## Running Tests
-- Run all tests
-- mvn test
+### 📁 View Test Report
 
-# Run with custom base URL
-- mvn test -DBASE_URL=http://localhost:8000
+After execution, open:
 
-# Run specific test class
-- mvn test -Dtest=CreateBookTest
-
-# Test Structure
-    src/test/java/
-    ├── tests/
-    │   ├── CreateBookTest.java
-    │   ├── GetBookTest.java
-    │   ├── UpdateBookTest.java
-    │   └── DeleteBookTest.java
-    └── config/
-    └── TestBase.java
-
-# CI/CD Pipeline
-    Automated workflow includes:
-
-    Server startup
-
-    Test execution
-
-    Results archiving
-
-    Artifact upload
-# Reporting
-
-    Test results available in:
-    
-    Console output
-    
-    Surefire reports in target/surefire-reports/
-    
-    GitHub Actions artifacts
