@@ -13,7 +13,7 @@ public class ApiClient {
   private final String baseUrl;
   private final int timeout;
   private final int maxRetries;
-  private String token;  // Store the token for reuse
+  private String token;
 
   private static final String BASE_URL = "http://localhost:8000";
   private static final String LOGIN_ENDPOINT = "/login/";
@@ -34,64 +34,57 @@ public class ApiClient {
 
     // Signup before login (safe for first run)
     signup(email, password);
-    this.token = login(email, password);
+
+    Response loginResponse = login(email, password);
+
+    System.out.println("Login status: " + loginResponse.getStatusCode());
+    System.out.println("Login response body: " + loginResponse.getBody().asString());
+
+    try {
+      this.token = loginResponse.jsonPath().getString("access_token");
+      if (this.token == null) {
+        throw new RuntimeException("Token not found in response: " + loginResponse.asString());
+      }
+    } catch (Exception e) {
+      throw new RuntimeException("Login failed: Could not extract token from response: " + loginResponse.asString(), e);
+    }
   }
 
-  public static void signup(String email, String password) {
-    String requestBody = String.format("{\"email\": \"%s\", \"password\": \"%s\"}", email, password);
-
-    Response response = RestAssured.given()
+  public static Response signup(String email, String password) {
+    String body = String.format("{\"email\": \"%s\", \"password\": \"%s\"}", email, password);
+    Response response = RestAssured
+            .given()
             .baseUri(BASE_URL)
             .contentType(ContentType.JSON)
-            .body(requestBody)
+            .body(body)
             .post("/signup/");
 
-    // Handle redirect if present
     if (response.getStatusCode() == 307) {
       String redirectUrl = response.getHeader("Location");
-      if (redirectUrl == null) {
-        throw new RuntimeException("Signup 307 redirect without Location header");
-      }
-
-      // Retry with redirect
-      response = RestAssured.given()
-              .contentType(ContentType.JSON)
-              .body(requestBody)
-              .post(redirectUrl);
+      response = RestAssured.given().contentType(ContentType.JSON).body(body).post(redirectUrl);
     }
 
-    if (response.getStatusCode() != 200 && response.getStatusCode() != 400) {
-      throw new RuntimeException("Signup failed: " + response.getStatusLine() + " - " + response.getBody().asString());
-    }
+    return response;
   }
 
-  // Method to login and store the token
-
-  public static String login(String email, String password) {
-    String requestBody = String.format("{\"email\": \"%s\", \"password\": \"%s\"}", email, password);
-
-    Response response = RestAssured.given()
+  public static Response login(String email, String password) {
+    String body = String.format("{\"email\": \"%s\", \"password\": \"%s\"}", email, password);
+    Response response = RestAssured
+            .given()
             .baseUri(BASE_URL)
             .contentType(ContentType.JSON)
-            .body(requestBody)
+            .body(body)
             .post(LOGIN_ENDPOINT);
 
     if (response.getStatusCode() == 307) {
       String redirectUrl = response.getHeader("Location");
-      response = RestAssured.given()
-              .contentType(ContentType.JSON)
-              .body(requestBody)
-              .post(redirectUrl);
+      System.out.println("Redirecting login to: " + redirectUrl);
+      response = RestAssured.given().contentType(ContentType.JSON).body(body).post(redirectUrl);
     }
 
-    if (response.getStatusCode() != 200) {
-      throw new RuntimeException("Login failed: " + response.getStatusLine() + " - " + response.getBody().asString());
-    }
-
-    return response.jsonPath().getString("access_token");
+    return response;
   }
 
-  // Use the token for subsequent API calls
   public Response createBook(Object bookData) {
     return given()
             .baseUri(baseUrl)

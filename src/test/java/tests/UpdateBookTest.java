@@ -1,5 +1,6 @@
 package tests;
 
+import io.qameta.allure.*;
 import config.TestBase;
 import org.testng.annotations.Test;
 import io.restassured.response.Response;
