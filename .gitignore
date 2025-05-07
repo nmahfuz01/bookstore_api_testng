@@ -1,0 +1,36 @@
+
+---
+
+### 📁 `.gitignore`
+
+```gitignore
+# Java-specific
+*.class
+*.jar
+*.war
+*.ear
+
+# Logs
+*.log
+
+# Eclipse/IntelliJ project files
+*.iml
+.idea/
+*.ipr
+*.iws
+out/
+
+# OS-generated
+.DS_Store
+Thumbs.db
+
+# Env or config
+.env
+config.properties
+
+# Maven
+dependency-reduced-pom.xml
+release.properties
+buildNumber.properties
+.mvn/timing.properties
+.mvn/wrapper/maven-wrapper.jar

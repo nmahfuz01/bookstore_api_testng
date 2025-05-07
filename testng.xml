@@ -1,0 +1,17 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Bookstore API Tests">
+    <test name="API Validation">
+        <groups>
+            <run>
+                <include name="smoke"/>
+                <include name="negative"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="tests.CreateBookTest"/>
+            <class name="tests.GetBookTest"/>
+            <class name="tests.UpdateBookTest"/>
+            <class name="tests.DeleteBookTest"/>
+        </classes>
+    </test>
+</suite>

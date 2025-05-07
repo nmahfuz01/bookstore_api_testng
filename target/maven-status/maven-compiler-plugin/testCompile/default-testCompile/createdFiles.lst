@@ -1,0 +1,5 @@
+config/TestBase.class
+tests/DeleteBookTest.class
+tests/CreateBookTest.class
+tests/GetBookTest.class
+tests/UpdateBookTest.class

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="TestSuite" time="2.311" tests="8" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="java.specification.version" value="17"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.class.path" value="/Users/maalam/Desktop/java_work/assignment/bookstore-api-tests/target/test-classes:/Users/maalam/Desktop/java_work/assignment/bookstore-api-tests/target/classes:/Users/maalam/.m2/repository/io/rest-assured/rest-assured/5.4.0/rest-assured-5.4.0.jar:/Users/maalam/.m2/repository/org/apache/groovy/groovy/4.0.16/groovy-4.0.16.jar:/Users/maalam/.m2/repository/org/apache/groovy/groovy-xml/4.0.16/groovy-xml-4.0.16.jar:/Users/maalam/.m2/repository/org/apache/httpcomponents/httpmime/4.5.13/httpmime-4.5.13.jar:/Users/maalam/.m2/repository/org/hamcrest/hamcrest/2.2/hamcrest-2.2.jar:/Users/maalam/.m2/repository/org/ccil/cowan/tagsoup/tagsoup/1.2.1/tagsoup-1.2.1.jar:/Users/maalam/.m2/repository/io/rest-assured/json-path/5.4.0/json-path-5.4.0.jar:/Users/maalam/.m2/repository/org/apache/groovy/groovy-json/4.0.16/groovy-json-4.0.16.jar:/Users/maalam/.m2/repository/io/rest-assured/rest-assured-common/5.4.0/rest-assured-common-5.4.0.jar:/Users/maalam/.m2/repository/io/rest-assured/xml-path/5.4.0/xml-path-5.4.0.jar:/Users/maalam/.m2/repository/org/apache/commons/commons-lang3/3.11/commons-lang3-3.11.jar:/Users/maalam/.m2/repository/org/testng/testng/7.9.0/testng-7.9.0.jar:/Users/maalam/.m2/repository/org/slf4j/slf4j-api/1.7.36/slf4j-api-1.7.36.jar:/Users/maalam/.m2/repository/com/beust/jcommander/1.82/jcommander-1.82.jar:/Users/maalam/.m2/repository/org/webjars/jquery/3.7.1/jquery-3.7.1.jar:/Users/maalam/.m2/repository/io/github/cdimascio/dotenv-java/3.0.0/dotenv-java-3.0.0.jar:/Users/maalam/.m2/repository/org/apache/httpcomponents/httpclient/4.5.14/httpclient-4.5.14.jar:/Users/maalam/.m2/repository/org/apache/httpcomponents/httpcore/4.4.16/httpcore-4.4.16.jar:/Users/maalam/.m2/repository/commons-logging/commons-logging/1.2/commons-logging-1.2.jar:/Users/maalam/.m2/repository/commons-codec/commons-codec/1.11/commons-codec-1.11.jar:/Users/maalam/.m2/repository/org/slf4j/slf4j-simple/2.0.9/slf4j-simple-2.0.9.jar:"/>
+    <property name="java.vm.vendor" value="Azul Systems, Inc."/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.vendor.url" value="http://www.azul.com/"/>
+    <property name="user.timezone" value="Asia/Kolkata"/>
+    <property name="os.name" value="Mac OS X"/>
+    <property name="java.vm.specification.version" value="17"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="IN"/>
+    <property name="sun.boot.library.path" value="/Users/maalam/.sdkman/candidates/java/17.0.8-zulu/zulu-17.jdk/Contents/Home/lib"/>
+    <property name="sun.java.command" value="/Users/maalam/Desktop/java_work/assignment/bookstore-api-tests/target/surefire/surefirebooter-20250507180157279_3.jar /Users/maalam/Desktop/java_work/assignment/bookstore-api-tests/target/surefire 2025-05-07T18-01-57_222-jvmRun1 surefire-20250507180157279_1tmp surefire_0-20250507180157279_2tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="/Users/maalam/Desktop/java_work/assignment/bookstore-api-tests/target/test-classes:/Users/maalam/Desktop/java_work/assignment/bookstore-api-tests/target/classes:/Users/maalam/.m2/repository/io/rest-assured/rest-assured/5.4.0/rest-assured-5.4.0.jar:/Users/maalam/.m2/repository/org/apache/groovy/groovy/4.0.16/groovy-4.0.16.jar:/Users/maalam/.m2/repository/org/apache/groovy/groovy-xml/4.0.16/groovy-xml-4.0.16.jar:/Users/maalam/.m2/repository/org/apache/httpcomponents/httpmime/4.5.13/httpmime-4.5.13.jar:/Users/maalam/.m2/repository/org/hamcrest/hamcrest/2.2/hamcrest-2.2.jar:/Users/maalam/.m2/repository/org/ccil/cowan/tagsoup/tagsoup/1.2.1/tagsoup-1.2.1.jar:/Users/maalam/.m2/repository/io/rest-assured/json-path/5.4.0/json-path-5.4.0.jar:/Users/maalam/.m2/repository/org/apache/groovy/groovy-json/4.0.16/groovy-json-4.0.16.jar:/Users/maalam/.m2/repository/io/rest-assured/rest-assured-common/5.4.0/rest-assured-common-5.4.0.jar:/Users/maalam/.m2/repository/io/rest-assured/xml-path/5.4.0/xml-path-5.4.0.jar:/Users/maalam/.m2/repository/org/apache/commons/commons-lang3/3.11/commons-lang3-3.11.jar:/Users/maalam/.m2/repository/org/testng/testng/7.9.0/testng-7.9.0.jar:/Users/maalam/.m2/repository/org/slf4j/slf4j-api/1.7.36/slf4j-api-1.7.36.jar:/Users/maalam/.m2/repository/com/beust/jcommander/1.82/jcommander-1.82.jar:/Users/maalam/.m2/repository/org/webjars/jquery/3.7.1/jquery-3.7.1.jar:/Users/maalam/.m2/repository/io/github/cdimascio/dotenv-java/3.0.0/dotenv-java-3.0.0.jar:/Users/maalam/.m2/repository/org/apache/httpcomponents/httpclient/4.5.14/httpclient-4.5.14.jar:/Users/maalam/.m2/repository/org/apache/httpcomponents/httpcore/4.4.16/httpcore-4.4.16.jar:/Users/maalam/.m2/repository/commons-logging/commons-logging/1.2/commons-logging-1.2.jar:/Users/maalam/.m2/repository/commons-codec/commons-codec/1.11/commons-codec-1.11.jar:/Users/maalam/.m2/repository/org/slf4j/slf4j-simple/2.0.9/slf4j-simple-2.0.9.jar:"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="/Users/maalam"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2023-07-18"/>
+    <property name="java.home" value="/Users/maalam/.sdkman/candidates/java/17.0.8-zulu/zulu-17.jdk/Contents/Home"/>
+    <property name="file.separator" value="/"/>
+    <property name="basedir" value="/Users/maalam/Desktop/java_work/assignment/bookstore-api-tests"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="surefire.real.class.path" value="/Users/maalam/Desktop/java_work/assignment/bookstore-api-tests/target/surefire/surefirebooter-20250507180157279_3.jar"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="17.0.8+7-LTS"/>
+    <property name="user.name" value="maalam"/>
+    <property name="path.separator" value=":"/>
+    <property name="os.version" value="15.4.1"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="java.vendor.version" value="Zulu17.44+15-CA"/>
+    <property name="localRepository" value="/Users/maalam/.m2/repository"/>
+    <property name="java.vendor.url.bug" value="http://www.azul.com/support/"/>
+    <property name="java.io.tmpdir" value="/var/folders/bj/29dsnqqs1b1bjx92tdvjbpf40000gp/T/"/>
+    <property name="java.version" value="17.0.8"/>
+    <property name="user.dir" value="/Users/maalam/Desktop/java_work/assignment/bookstore-api-tests"/>
+    <property name="os.arch" value="aarch64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="native.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/Users/maalam/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="java.vendor" value="Azul Systems, Inc."/>
+    <property name="java.vm.version" value="17.0.8+7-LTS"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
+    <property name="java.class.version" value="61.0"/>
+  </properties>
+  <testcase name="testCreateBookInvalidData" classname="tests.CreateBookTest" time="0.063">
+    <system-err><![CDATA[SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+]]></system-err>
+  </testcase>
+  <testcase name="testCreateBookValidData" classname="tests.CreateBookTest" time="0.028"/>
+  <testcase name="testGetExistingBook" classname="tests.GetBookTest" time="0.036">
+    <system-out><![CDATA[Created book response: {"name":"Test Book","id":30,"book_summary":"Delete test summary","published_year":2023,"author":"Test Author"}
+]]></system-out>
+  </testcase>
+  <testcase name="testGetNonExistentBook" classname="tests.GetBookTest" time="0.012"/>
+  <testcase name="testUpdateExistingBook" classname="tests.UpdateBookTest" time="0.049">
+    <system-out><![CDATA[Created book response: {"name":"Test Book","id":31,"book_summary":"Delete test summary","published_year":2023,"author":"Test Author"}
+]]></system-out>
+  </testcase>
+  <testcase name="testUpdateNonExistentBook" classname="tests.UpdateBookTest" time="0.01">
+    <system-out><![CDATA[Updating book with ID: 31
+Updated Book Data:     {
+        "name": "Book Name1",
+        "author": "Author Name",
+        "published_year": "2023",
+        "book_summary": "Some summary"
+    }
+
+]]></system-out>
+  </testcase>
+  <testcase name="testDeleteExistingBook" classname="tests.DeleteBookTest" time="0.032">
+    <system-out><![CDATA[Created book response: {"name":"Test Book","id":32,"book_summary":"Delete test summary","published_year":2023,"author":"Test Author"}
+]]></system-out>
+  </testcase>
+  <testcase name="testDeleteNonExistentBook" classname="tests.DeleteBookTest" time="0.01"/>
+</testsuite>
