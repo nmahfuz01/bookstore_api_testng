@@ -10,6 +10,17 @@ public class TestBase {
   protected ApiClient apiClient;
   protected static Dotenv config;
 
+//  @BeforeClass(alwaysRun = true)
+//  public void setup() {
+//    config = Dotenv.configure().ignoreIfMissing().load();
+//    apiClient = new ApiClient(
+//            config.get("BASE_URL", "http://localhost:8000"),
+//            Integer.parseInt(config.get("DEFAULT_TIMEOUT", "5000")),
+//            Integer.parseInt(config.get("MAX_RETRIES", "3"))
+//    );
+//    RestAssured.enableLoggingOfRequestAndResponseIfValidationFails();
+//  }
+
   @BeforeClass(alwaysRun = true)
   public void setup() {
     config = Dotenv.configure().ignoreIfMissing().load();
