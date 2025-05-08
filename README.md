@@ -50,6 +50,10 @@ A robust API automation suite for Bookstore application, built using **Java**, *
 ```bash
 mvn clean test
 ```
+```bash
+mvn -Dtest=YourTestClassName test
+```
+
 # View Allure Report
     
     mvn allure:report
