@@ -1,58 +1,54 @@
 package tests;
-import io.qameta.allure.*;
+
 import config.TestBase;
+import io.qameta.allure.*;
 import io.restassured.response.Response;
 import org.testng.annotations.Test;
-import io.cucumber.java.en.*;
 import static org.hamcrest.Matchers.*;
 
+@Epic("Book API Tests")
+@Feature("Create Book Feature")
 public class CreateBookTest extends TestBase {
 
-  private Response response;
-  private String bookId;
+private Response response;
+private String bookId;
 
-  @Given("I have a book JSON with name {string}, author {string}, published year {string}, and summary {string}")
-  public void i_have_a_book_json(String name, String author, String year, String summary) {
-    String bookJson = String.format("""
-          {
-              "name": "%s",
-              "author": "%s",
-              "published_year": "%s",
-              "book_summary": "%s"
-          }
-          """, name, author, year, summary);
+@Test(groups = {"smoke"}, description = "Create a new book with valid details")
+@Severity(SeverityLevel.CRITICAL)
+@Description("Validate book creation with valid payload")
+@Story("Positive Test - Create Book")
+public void testCreateBookWithValidData() {
+  String bookJson = """
+        {
+            "name": "Naz Name",
+            "author": "Author Name",
+            "published_year": "2024",
+            "book_summary": "This is a test book created by automation."
+        }
+    """;
 
-    // Store the JSON data for future use
-    response = apiClient.createBook(bookJson);
-  }
+  response = apiClient.createBook(bookJson);
 
-  @When("I create a new book with the provided details")
-  public void i_create_a_new_book_with_the_provided_details() {
-    // Nothing to do here, as the book is created in the @Given step.
-  }
+  response.then()
+          .statusCode(200)
+          .body("id", notNullValue())
+          .body("name", equalTo("Naz Name"))
+          .body("author", equalTo("Author Name"));
 
-  @Then("The book should be created successfully")
-  public void the_book_should_be_created_successfully() {
-    response.then()
-            .statusCode(200)
-            .body("id", notNullValue())
-            .body("name", equalTo("Naz Name"))
-            .body("author", equalTo("Author Name"));
+  bookId = response.jsonPath().getString("id");
+}
 
-    // Storing the bookId for later tests
-    bookId = response.jsonPath().getString("id");
-  }
+@Test(groups = {"negative"}, description = "Send invalid book payload and verify error response")
+@Severity(SeverityLevel.NORMAL)
+@Description("Validate error response when book JSON is invalid")
+@Story("Negative Test - Invalid Book Creation")
+public void testCreateBookWithInvalidData() {
+  String invalidJson = "{invalid_json}";
 
-  @Given("I have an invalid book JSON")
-  public void i_have_an_invalid_book_json() {
-    String invalidJson = "{invalid_json}";
-    response = apiClient.createBook(invalidJson);
-  }
+  response = apiClient.createBook(invalidJson);
 
-  @Then("I should receive an error for invalid data")
-  public void i_should_receive_an_error_for_invalid_data() {
-    response.then()
-            .statusCode(422)  // <-- Update this status code as necessary
-            .body("detail[0].msg", containsString("decode error"));
-  }
+  response.then()
+          .statusCode(422)
+          .body("detail[0].msg", containsString("decode error"));
+}
 }
