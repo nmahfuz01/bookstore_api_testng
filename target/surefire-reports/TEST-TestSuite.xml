@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<<<<<<< HEAD
 <testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="TestSuite" time="2.311" tests="8" errors="0" skipped="0" failures="0">
+=======
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="TestSuite" time="6.673" tests="8" errors="0" skipped="0" failures="0">
+>>>>>>> 675b60a (Pom file changes)
   <properties>
     <property name="java.specification.version" value="17"/>
     <property name="sun.jnu.encoding" value="UTF-8"/>
@@ -11,9 +15,15 @@
     <property name="os.name" value="Mac OS X"/>
     <property name="java.vm.specification.version" value="17"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
+<<<<<<< HEAD
     <property name="user.country" value="IN"/>
     <property name="sun.boot.library.path" value="/Users/maalam/.sdkman/candidates/java/17.0.8-zulu/zulu-17.jdk/Contents/Home/lib"/>
     <property name="sun.java.command" value="/Users/maalam/Desktop/java_work/assignment/bookstore-api-tests/target/surefire/surefirebooter-20250507180157279_3.jar /Users/maalam/Desktop/java_work/assignment/bookstore-api-tests/target/surefire 2025-05-07T18-01-57_222-jvmRun1 surefire-20250507180157279_1tmp surefire_0-20250507180157279_2tmp"/>
+=======
+    <property name="user.country" value="US"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-17.0.4.1\bin"/>
+    <property name="sun.java.command" value="C:\Users\DR\AppData\Local\Temp\surefire7999140319201791732\surefirebooter-20250516115652048_3.jar C:\Users\DR\AppData\Local\Temp\surefire7999140319201791732 2025-05-16T11-56-51_785-jvmRun1 surefire-20250516115652048_1tmp surefire_0-20250516115652048_2tmp"/>
+>>>>>>> 675b60a (Pom file changes)
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="/Users/maalam/Desktop/java_work/assignment/bookstore-api-tests/target/test-classes:/Users/maalam/Desktop/java_work/assignment/bookstore-api-tests/target/classes:/Users/maalam/.m2/repository/io/rest-assured/rest-assured/5.4.0/rest-assured-5.4.0.jar:/Users/maalam/.m2/repository/org/apache/groovy/groovy/4.0.16/groovy-4.0.16.jar:/Users/maalam/.m2/repository/org/apache/groovy/groovy-xml/4.0.16/groovy-xml-4.0.16.jar:/Users/maalam/.m2/repository/org/apache/httpcomponents/httpmime/4.5.13/httpmime-4.5.13.jar:/Users/maalam/.m2/repository/org/hamcrest/hamcrest/2.2/hamcrest-2.2.jar:/Users/maalam/.m2/repository/org/ccil/cowan/tagsoup/tagsoup/1.2.1/tagsoup-1.2.1.jar:/Users/maalam/.m2/repository/io/rest-assured/json-path/5.4.0/json-path-5.4.0.jar:/Users/maalam/.m2/repository/org/apache/groovy/groovy-json/4.0.16/groovy-json-4.0.16.jar:/Users/maalam/.m2/repository/io/rest-assured/rest-assured-common/5.4.0/rest-assured-common-5.4.0.jar:/Users/maalam/.m2/repository/io/rest-assured/xml-path/5.4.0/xml-path-5.4.0.jar:/Users/maalam/.m2/repository/org/apache/commons/commons-lang3/3.11/commons-lang3-3.11.jar:/Users/maalam/.m2/repository/org/testng/testng/7.9.0/testng-7.9.0.jar:/Users/maalam/.m2/repository/org/slf4j/slf4j-api/1.7.36/slf4j-api-1.7.36.jar:/Users/maalam/.m2/repository/com/beust/jcommander/1.82/jcommander-1.82.jar:/Users/maalam/.m2/repository/org/webjars/jquery/3.7.1/jquery-3.7.1.jar:/Users/maalam/.m2/repository/io/github/cdimascio/dotenv-java/3.0.0/dotenv-java-3.0.0.jar:/Users/maalam/.m2/repository/org/apache/httpcomponents/httpclient/4.5.14/httpclient-4.5.14.jar:/Users/maalam/.m2/repository/org/apache/httpcomponents/httpcore/4.4.16/httpcore-4.4.16.jar:/Users/maalam/.m2/repository/commons-logging/commons-logging/1.2/commons-logging-1.2.jar:/Users/maalam/.m2/repository/commons-codec/commons-codec/1.11/commons-codec-1.11.jar:/Users/maalam/.m2/repository/org/slf4j/slf4j-simple/2.0.9/slf4j-simple-2.0.9.jar:"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -28,7 +38,12 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
+<<<<<<< HEAD
     <property name="surefire.real.class.path" value="/Users/maalam/Desktop/java_work/assignment/bookstore-api-tests/target/surefire/surefirebooter-20250507180157279_3.jar"/>
+=======
+    <property name="surefire.real.class.path" value="C:\Users\DR\AppData\Local\Temp\surefire7999140319201791732\surefirebooter-20250516115652048_3.jar"/>
+    <property name="user.script" value=""/>
+>>>>>>> 675b60a (Pom file changes)
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="17.0.8+7-LTS"/>
     <property name="user.name" value="maalam"/>
@@ -53,12 +68,21 @@
     <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
     <property name="java.class.version" value="61.0"/>
   </properties>
+<<<<<<< HEAD
   <testcase name="testCreateBookInvalidData" classname="tests.CreateBookTest" time="0.063">
+=======
+  <testcase name="testCreateBookWithInvalidData" classname="tests.CreateBookTest" time="0.373">
+    <system-out><![CDATA[Redirecting login to: http://localhost:8000/login
+Login status: 200
+Login response body: {"access_token":"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ0ZXN0QGdtYWlsLmNvbSIsImV4cCI6MTc0NzM3ODYxNX0.3dIYOgjLS-ZuW0JankLyFUBwZOFU9kSflDK-gCr_Wv8","token_type":"bearer"}
+]]></system-out>
+>>>>>>> 675b60a (Pom file changes)
     <system-err><![CDATA[SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
 SLF4J: Defaulting to no-operation (NOP) logger implementation
 SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
 ]]></system-err>
   </testcase>
+<<<<<<< HEAD
   <testcase name="testCreateBookValidData" classname="tests.CreateBookTest" time="0.028"/>
   <testcase name="testGetExistingBook" classname="tests.GetBookTest" time="0.036">
     <system-out><![CDATA[Created book response: {"name":"Test Book","id":30,"book_summary":"Delete test summary","published_year":2023,"author":"Test Author"}
@@ -71,6 +95,26 @@ SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further detail
   </testcase>
   <testcase name="testUpdateNonExistentBook" classname="tests.UpdateBookTest" time="0.01">
     <system-out><![CDATA[Updating book with ID: 31
+=======
+  <testcase name="testCreateBookWithValidData" classname="tests.CreateBookTest" time="0.096"/>
+  <testcase name="testGetExistingBook" classname="tests.GetBookTest" time="0.123">
+    <system-out><![CDATA[Redirecting login to: http://localhost:8000/login
+Login status: 200
+Login response body: {"access_token":"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ0ZXN0QGdtYWlsLmNvbSIsImV4cCI6MTc0NzM3ODYxN30.Sn-dfFG_oBlBYMzaucxuBqP4SoqT11_NDwZ31dIcySA","token_type":"bearer"}
+Created book response: {"name":"Test Book","author":"Test Author","id":23,"book_summary":"Delete test summary","published_year":2023}
+]]></system-out>
+  </testcase>
+  <testcase name="testGetNonExistentBook" classname="tests.GetBookTest" time="0.05"/>
+  <testcase name="testUpdateExistingBook" classname="tests.UpdateBookTest" time="0.174">
+    <system-out><![CDATA[Redirecting login to: http://localhost:8000/login
+Login status: 200
+Login response body: {"access_token":"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ0ZXN0QGdtYWlsLmNvbSIsImV4cCI6MTc0NzM3ODYxOH0.3Q-PK0L_Py4nQSaz3ex-r_79D1W8XXvwIbT3adkZb8s","token_type":"bearer"}
+Created book response: {"name":"Test Book","author":"Test Author","id":24,"book_summary":"Delete test summary","published_year":2023}
+]]></system-out>
+  </testcase>
+  <testcase name="testUpdateNonExistentBook" classname="tests.UpdateBookTest" time="0.098">
+    <system-out><![CDATA[Updating book with ID: 24
+>>>>>>> 675b60a (Pom file changes)
 Updated Book Data:     {
         "name": "Book Name1",
         "author": "Author Name",
@@ -80,9 +124,20 @@ Updated Book Data:     {
 
 ]]></system-out>
   </testcase>
+<<<<<<< HEAD
   <testcase name="testDeleteExistingBook" classname="tests.DeleteBookTest" time="0.032">
     <system-out><![CDATA[Created book response: {"name":"Test Book","id":32,"book_summary":"Delete test summary","published_year":2023,"author":"Test Author"}
 ]]></system-out>
   </testcase>
   <testcase name="testDeleteNonExistentBook" classname="tests.DeleteBookTest" time="0.01"/>
+=======
+  <testcase name="testDeleteExistingBook" classname="tests.DeleteBookTest" time="0.105">
+    <system-out><![CDATA[Redirecting login to: http://localhost:8000/login
+Login status: 200
+Login response body: {"access_token":"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ0ZXN0QGdtYWlsLmNvbSIsImV4cCI6MTc0NzM3ODYxOH0.3Q-PK0L_Py4nQSaz3ex-r_79D1W8XXvwIbT3adkZb8s","token_type":"bearer"}
+Created book response: {"name":"Test Book","author":"Test Author","id":25,"book_summary":"Delete test summary","published_year":2023}
+]]></system-out>
+  </testcase>
+  <testcase name="testDeleteNonExistentBook" classname="tests.DeleteBookTest" time="0.047"/>
+>>>>>>> 675b60a (Pom file changes)
 </testsuite>

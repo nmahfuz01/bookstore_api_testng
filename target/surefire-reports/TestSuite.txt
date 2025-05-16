@@ -1,4 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
+<<<<<<< HEAD
 Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.311 s -- in TestSuite
+=======
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 6.673 s -- in TestSuite
+>>>>>>> 675b60a (Pom file changes)

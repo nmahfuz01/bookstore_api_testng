@@ -2,6 +2,7 @@
 <testng-results ignored="0" total="8" passed="8" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
+<<<<<<< HEAD
   <suite started-at="2025-05-07T18:01:57 IST" name="Bookstore API Tests" finished-at="2025-05-07T18:01:59 IST" duration-ms="2107">
     <groups>
       <group name="negative">
@@ -68,11 +69,80 @@
           </reporter-output>
         </test-method> <!-- testCreateBookValidData -->
         <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.CreateBookTest@6b4a4e18]" started-at="2025-05-07T18:01:58 IST" name="tearDown" finished-at="2025-05-07T18:01:58 IST" duration-ms="9" status="PASS">
+=======
+  <suite started-at="2025-05-16T11:56:53 IST" name="Bookstore API Tests" finished-at="2025-05-16T11:56:59 IST" duration-ms="5609">
+    <groups>
+      <group name="negative">
+        <method signature="CreateBookTest.testCreateBookWithInvalidData()[pri:0, instance:tests.CreateBookTest@2a265ea9]" name="testCreateBookWithInvalidData" class="tests.CreateBookTest"/>
+        <method signature="DeleteBookTest.testDeleteNonExistentBook()[pri:0, instance:tests.DeleteBookTest@6e9175d8]" name="testDeleteNonExistentBook" class="tests.DeleteBookTest"/>
+        <method signature="GetBookTest.testGetNonExistentBook()[pri:0, instance:tests.GetBookTest@5b1669c0]" name="testGetNonExistentBook" class="tests.GetBookTest"/>
+        <method signature="UpdateBookTest.testUpdateNonExistentBook()[pri:0, instance:tests.UpdateBookTest@78e4deb0]" name="testUpdateNonExistentBook" class="tests.UpdateBookTest"/>
+      </group> <!-- negative -->
+      <group name="smoke">
+        <method signature="CreateBookTest.testCreateBookWithValidData()[pri:0, instance:tests.CreateBookTest@2a265ea9]" name="testCreateBookWithValidData" class="tests.CreateBookTest"/>
+        <method signature="DeleteBookTest.testDeleteExistingBook()[pri:0, instance:tests.DeleteBookTest@6e9175d8]" name="testDeleteExistingBook" class="tests.DeleteBookTest"/>
+        <method signature="GetBookTest.testGetExistingBook()[pri:0, instance:tests.GetBookTest@5b1669c0]" name="testGetExistingBook" class="tests.GetBookTest"/>
+        <method signature="UpdateBookTest.testUpdateExistingBook()[pri:0, instance:tests.UpdateBookTest@78e4deb0]" name="testUpdateExistingBook" class="tests.UpdateBookTest"/>
+      </group> <!-- smoke -->
+    </groups>
+    <test started-at="2025-05-16T11:56:53 IST" name="API Validation" finished-at="2025-05-16T11:56:59 IST" duration-ms="5609">
+      <class name="tests.UpdateBookTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.UpdateBookTest@78e4deb0]" started-at="2025-05-16T11:56:57 IST" name="setup" finished-at="2025-05-16T11:56:58 IST" duration-ms="401" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="testUpdateExistingBook()[pri:0, instance:tests.UpdateBookTest@78e4deb0]" started-at="2025-05-16T11:56:58 IST" name="testUpdateExistingBook" description="Update existing book details" finished-at="2025-05-16T11:56:58 IST" duration-ms="190" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testUpdateExistingBook -->
+        <test-method signature="testUpdateNonExistentBook()[pri:0, instance:tests.UpdateBookTest@78e4deb0]" started-at="2025-05-16T11:56:58 IST" name="testUpdateNonExistentBook" description="Update non-existent book" finished-at="2025-05-16T11:56:58 IST" duration-ms="35" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testUpdateNonExistentBook -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.UpdateBookTest@78e4deb0]" started-at="2025-05-16T11:56:58 IST" name="tearDown" finished-at="2025-05-16T11:56:58 IST" duration-ms="18" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- tests.UpdateBookTest -->
+      <class name="tests.DeleteBookTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.DeleteBookTest@6e9175d8]" started-at="2025-05-16T11:56:58 IST" name="setup" finished-at="2025-05-16T11:56:58 IST" duration-ms="412" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="testDeleteExistingBook()[pri:0, instance:tests.DeleteBookTest@6e9175d8]" started-at="2025-05-16T11:56:58 IST" name="testDeleteExistingBook" description="Delete an existing book" finished-at="2025-05-16T11:56:59 IST" duration-ms="106" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDeleteExistingBook -->
+        <test-method signature="testDeleteNonExistentBook()[pri:0, instance:tests.DeleteBookTest@6e9175d8]" started-at="2025-05-16T11:56:59 IST" name="testDeleteNonExistentBook" description="Delete a non-existent book" finished-at="2025-05-16T11:56:59 IST" duration-ms="36" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDeleteNonExistentBook -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.DeleteBookTest@6e9175d8]" started-at="2025-05-16T11:56:59 IST" name="tearDown" finished-at="2025-05-16T11:56:59 IST" duration-ms="18" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- tests.DeleteBookTest -->
+      <class name="tests.CreateBookTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.CreateBookTest@2a265ea9]" started-at="2025-05-16T11:56:53 IST" name="setup" finished-at="2025-05-16T11:56:56 IST" duration-ms="3211" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="testCreateBookWithInvalidData()[pri:0, instance:tests.CreateBookTest@2a265ea9]" started-at="2025-05-16T11:56:56 IST" name="testCreateBookWithInvalidData" description="Send invalid book payload and verify error response" finished-at="2025-05-16T11:56:57 IST" duration-ms="292" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCreateBookWithInvalidData -->
+        <test-method signature="testCreateBookWithValidData()[pri:0, instance:tests.CreateBookTest@2a265ea9]" started-at="2025-05-16T11:56:57 IST" name="testCreateBookWithValidData" description="Create a new book with valid details" finished-at="2025-05-16T11:56:57 IST" duration-ms="102" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCreateBookWithValidData -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.CreateBookTest@2a265ea9]" started-at="2025-05-16T11:56:57 IST" name="tearDown" finished-at="2025-05-16T11:56:57 IST" duration-ms="41" status="PASS">
+>>>>>>> 675b60a (Pom file changes)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- tests.CreateBookTest -->
       <class name="tests.GetBookTest">
+<<<<<<< HEAD
         <test-method is-config="true" signature="setup()[pri:0, instance:tests.GetBookTest@5a955565]" started-at="2025-05-07T18:01:58 IST" name="setup" finished-at="2025-05-07T18:01:59 IST" duration-ms="290" status="PASS">
           <reporter-output>
           </reporter-output>
@@ -86,6 +156,21 @@
           </reporter-output>
         </test-method> <!-- testGetNonExistentBook -->
         <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.GetBookTest@5a955565]" started-at="2025-05-07T18:01:59 IST" name="tearDown" finished-at="2025-05-07T18:01:59 IST" duration-ms="6" status="PASS">
+=======
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.GetBookTest@5b1669c0]" started-at="2025-05-16T11:56:57 IST" name="setup" finished-at="2025-05-16T11:56:57 IST" duration-ms="376" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="testGetExistingBook()[pri:0, instance:tests.GetBookTest@5b1669c0]" started-at="2025-05-16T11:56:57 IST" name="testGetExistingBook" description="Get existing book details" finished-at="2025-05-16T11:56:57 IST" duration-ms="119" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGetExistingBook -->
+        <test-method signature="testGetNonExistentBook()[pri:0, instance:tests.GetBookTest@5b1669c0]" started-at="2025-05-16T11:56:57 IST" name="testGetNonExistentBook" description="Get non-existent book" finished-at="2025-05-16T11:56:57 IST" duration-ms="49" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGetNonExistentBook -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.GetBookTest@5b1669c0]" started-at="2025-05-16T11:56:57 IST" name="tearDown" finished-at="2025-05-16T11:56:57 IST" duration-ms="17" status="PASS">
+>>>>>>> 675b60a (Pom file changes)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
