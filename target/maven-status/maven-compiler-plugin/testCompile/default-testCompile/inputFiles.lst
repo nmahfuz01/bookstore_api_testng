@@ -1,6 +1,6 @@
-C:\Users\DR\eclipse-workspace\bookstore-api-tests\src\test\java\config\TestBase.java
-C:\Users\DR\eclipse-workspace\bookstore-api-tests\src\test\java\runners\TestRunner.java
-C:\Users\DR\eclipse-workspace\bookstore-api-tests\src\test\java\tests\GetBookTest.java
-C:\Users\DR\eclipse-workspace\bookstore-api-tests\src\test\java\tests\DeleteBookTest.java
-C:\Users\DR\eclipse-workspace\bookstore-api-tests\src\test\java\tests\UpdateBookTest.java
-C:\Users\DR\eclipse-workspace\bookstore-api-tests\src\test\java\tests\CreateBookTest.java
+C:\Users\DR\eclipse-workspace\bookstore_api_testng\src\test\java\tests\GetBookTest.java
+C:\Users\DR\eclipse-workspace\bookstore_api_testng\src\test\java\tests\DeleteBookTest.java
+C:\Users\DR\eclipse-workspace\bookstore_api_testng\src\test\java\runners\TestRunner.java
+C:\Users\DR\eclipse-workspace\bookstore_api_testng\src\test\java\tests\CreateBookTest.java
+C:\Users\DR\eclipse-workspace\bookstore_api_testng\src\test\java\config\TestBase.java
+C:\Users\DR\eclipse-workspace\bookstore_api_testng\src\test\java\tests\UpdateBookTest.java

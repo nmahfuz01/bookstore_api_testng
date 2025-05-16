@@ -14,48 +14,47 @@
     </properties>
 
     <dependencies>
-        <!-- RestAssured -->
+        <!-- RestAssured for API Testing -->
         <dependency>
             <groupId>io.rest-assured</groupId>
             <artifactId>rest-assured</artifactId>
             <version>${rest-assured.version}</version>
         </dependency>
 
-        <!-- TestNG -->
+        <!-- TestNG for test framework -->
         <dependency>
             <groupId>org.testng</groupId>
             <artifactId>testng</artifactId>
             <version>${testng.version}</version>
         </dependency>
 
-        <!-- Environment Config -->
+        <!-- Dotenv for loading .env environment variables -->
         <dependency>
             <groupId>io.github.cdimascio</groupId>
             <artifactId>dotenv-java</artifactId>
             <version>3.0.0</version>
         </dependency>
 
-        <!-- Apache HttpClient Config -->
+        <!-- HTTP Client (optional if needed separately) -->
         <dependency>
             <groupId>org.apache.httpcomponents</groupId>
             <artifactId>httpclient</artifactId>
             <version>4.5.14</version>
         </dependency>
 
-        <!-- Allure TestNG integration -->
+        <!-- Allure Report Integration -->
         <dependency>
             <groupId>io.qameta.allure</groupId>
             <artifactId>allure-testng</artifactId>
             <version>${allure.version}</version>
         </dependency>
-        <!-- Optional: Allure Cucumber integration -->
         <dependency>
             <groupId>io.qameta.allure</groupId>
             <artifactId>allure-cucumber7-jvm</artifactId>
             <version>${allure.version}</version>
         </dependency>
 
-        <!-- Cucumber dependencies -->
+        <!-- Cucumber for BDD -->
         <dependency>
             <groupId>io.cucumber</groupId>
             <artifactId>cucumber-java</artifactId>
@@ -77,7 +76,7 @@
                 <version>2.11.2</version>
             </plugin>
 
-            <!-- Surefire Plugin for TestNG -->
+            <!-- Surefire Plugin to run TestNG tests -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-surefire-plugin</artifactId>
@@ -92,7 +91,7 @@
                 </configuration>
             </plugin>
 
-            <!-- Compiler Plugin -->
+            <!-- Java Compiler Plugin -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
